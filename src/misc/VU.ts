@@ -48,3 +48,9 @@ export interface VUMeterCircular extends VUMeterBase {
 }
 
 export type VUMeter = VUMeterLinear | VUMeterCircular;
+
+export interface VUMeterData {
+  left: number;
+  right: number;
+  mono: number;
+}
