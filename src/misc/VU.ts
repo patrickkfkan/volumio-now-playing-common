@@ -1,14 +1,17 @@
 export interface VUMeterBase {
+  name: string;
   type: 'linear' | 'circular';
   meter: {
     x: number;
     y: number;
   };
-  channels: number;
+  channels: 1 | 2;
   uiRefreshPeriod: number;
-  bgrFilename: string;
-  indicatorFilename: string;
-  screenBgr: string;
+  images: {
+    background: string;
+    indicator: string;
+    screenBackground: string | null;
+  };
 }
 
 export interface VUMeterLinear extends VUMeterBase {
@@ -31,23 +34,35 @@ export interface VUMeterLinear extends VUMeterBase {
   };
 }
 
-export interface VUMeterCircular extends VUMeterBase {
+export interface VUMeterCircularBase extends VUMeterBase {
   type: 'circular';
   stepsPerDegree: number;
   startAngle: number;
   stopAngle: number;
   distance: number;
+}
+
+export interface VUMeterCircularStereo extends VUMeterCircularBase {
+  channels: 2;
   leftOrigin: {
     x: number;
     y: number;
-  }
+  };
   rightOrigin: {
     x: number;
     y: number;
-  }
+  };
 }
 
-export type VUMeter = VUMeterLinear | VUMeterCircular;
+export interface VUMeterCircularMono extends VUMeterCircularBase {
+  channels: 1;
+  monoOrigin: {
+    x: number;
+    y: number;
+  };
+}
+
+export type VUMeter = VUMeterLinear | VUMeterCircularStereo | VUMeterCircularMono;
 
 export interface VUMeterData {
   left: number;
