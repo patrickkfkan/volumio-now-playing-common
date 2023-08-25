@@ -39,8 +39,6 @@ export interface VUMeterLinear extends VUMeterBase {
 export interface VUMeterCircularBase extends VUMeterBase {
   type: 'circular';
   stepsPerDegree: number;
-  startAngle: number;
-  stopAngle: number;
   distance: number;
 }
 
@@ -54,6 +52,15 @@ export interface VUMeterCircularStereo extends VUMeterCircularBase {
     x: number;
     y: number;
   };
+  angle: {
+    start: number;
+    stop: number;
+  } | {
+    leftStart: number;
+    leftStop: number;
+    rightStart: number;
+    rightStop: number;
+  };
 }
 
 export interface VUMeterCircularMono extends VUMeterCircularBase {
@@ -62,6 +69,10 @@ export interface VUMeterCircularMono extends VUMeterCircularBase {
     x: number;
     y: number;
   };
+  angle: {
+    start: number;
+    stop: number;
+  }
 }
 
 export type VUMeter = VUMeterLinear | VUMeterCircularStereo | VUMeterCircularMono;
