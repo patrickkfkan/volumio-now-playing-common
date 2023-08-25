@@ -33,6 +33,13 @@ export interface VUMeterLinear extends VUMeterBase {
         regular: number;
         overload: number;
     };
+    direction: 'left-right' | 'bottom-top' | 'top-bottom' | 'center-edges' | 'edges-center';
+    flipLeft: {
+        x: boolean;
+    };
+    flipRight: {
+        x: boolean;
+    };
 }
 export interface VUMeterCircularBase extends VUMeterBase {
     type: 'circular';
