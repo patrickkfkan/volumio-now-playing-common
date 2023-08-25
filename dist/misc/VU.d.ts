@@ -9,12 +9,14 @@ export interface VUMeterBase {
     uiRefreshPeriod: number;
     images: {
         background: string;
+        foreground: string | null;
         indicator: string;
         screenBackground: string | null;
     };
 }
 export interface VUMeterLinear extends VUMeterBase {
     type: 'linear';
+    channels: 2;
     left: {
         x: number;
         y: number;

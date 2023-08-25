@@ -9,6 +9,7 @@ export interface VUMeterBase {
   uiRefreshPeriod: number;
   images: {
     background: string;
+    foreground: string | null;
     indicator: string;
     screenBackground: string | null;
   };
