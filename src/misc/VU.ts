@@ -53,15 +53,6 @@ export interface VUMeterCircularStereo extends VUMeterCircularBase {
     y: number;
   };
   angle: {
-    start: number;
-    stop: number;
-    leftStart?: undefined;
-    leftStop?: undefined;
-    rightStart?: undefined;
-    rightStop?: undefined;
-  } | {
-    start?: undefined;
-    stop?: undefined;
     leftStart: number;
     leftStop: number;
     rightStart: number;
