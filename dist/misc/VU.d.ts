@@ -75,6 +75,64 @@ export interface VUMeterCircularMono extends VUMeterCircularBase {
     };
 }
 export type VUMeter = VUMeterLinear | VUMeterCircularStereo | VUMeterCircularMono;
+export interface VUMeterPlayInfoTextElement {
+    position: {
+        x: number;
+        y: number;
+    };
+    style: 'bold' | 'regular' | 'light';
+}
+export type VUMeterExtended = VUMeter & {
+    extend: true;
+    albumart: {
+        position: {
+            x: number;
+            y: number;
+        };
+        size: {
+            width: number;
+            height: number;
+        };
+        border: {
+            width: number;
+        } | null;
+    } | null;
+    playInfo: {
+        title: VUMeterPlayInfoTextElement | null;
+        artist: VUMeterPlayInfoTextElement | null;
+        album: VUMeterPlayInfoTextElement | null;
+        sampleRate: VUMeterPlayInfoTextElement | null;
+        center: boolean;
+        maxWidth: number | null;
+        trackType: {
+            position: {
+                x: number;
+                y: number;
+            };
+            color: string;
+            size: {
+                width: number;
+                height: number;
+            };
+        } | null;
+    } | null;
+    timeRemaining: {
+        position: {
+            x: number;
+            y: number;
+        };
+        color: string;
+    } | null;
+    font: {
+        size: {
+            light: number;
+            regular: number;
+            bold: number;
+            digi: number;
+        };
+        color: string;
+    };
+};
 export interface VUMeterData {
     left: number;
     right: number;
