@@ -103,7 +103,7 @@ export type VUMeterExtended = VUMeter & {
         album: VUMeterPlayInfoTextElement | null;
         sampleRate: VUMeterPlayInfoTextElement | null;
         center: boolean;
-        maxWidth: number | null;
+        maxWidth: number;
         trackType: {
             position: {
                 x: number;
