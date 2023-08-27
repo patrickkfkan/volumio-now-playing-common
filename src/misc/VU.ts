@@ -127,6 +127,11 @@ export type VUMeterExtended = VUMeter & {
     color: string;
   } | null;
   font: {
+    url: {
+      light: string;
+      regular: string;
+      bold: string;
+    };
     size: {
       light: number;
       regular: number;
