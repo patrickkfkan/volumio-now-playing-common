@@ -148,3 +148,11 @@ export interface VUMeterData {
   right: number;
   mono: number;
 }
+
+export type VUMeterConfig = {
+  error?: undefined;
+  meters: VUMeter[]
+} | {
+  error: string;
+  meters?: undefined;
+}
