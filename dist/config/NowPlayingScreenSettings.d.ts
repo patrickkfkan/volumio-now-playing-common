@@ -55,6 +55,12 @@ export interface NowPlayingScreenSettings {
     albumartFit?: ImageFit;
     albumartBorder?: string;
     albumartBorderRadius?: string;
+    vuMeter?: {
+        templateType: 'random' | 'fixed';
+        template?: string;
+        meterType?: 'random' | 'fixed';
+        meter?: string;
+    };
     dockedMenu?: {
         enabled?: boolean;
     };

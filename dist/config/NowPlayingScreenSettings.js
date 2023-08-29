@@ -72,6 +72,13 @@ exports.DefaultNowPlayingScreenSettings = {
     // ALbumart: border
     albumartBorder: '',
     albumartBorderRadius: '',
+    // VU Meter
+    vuMeter: {
+        templateType: 'random',
+        template: '',
+        meterType: 'random',
+        meter: ''
+    },
     // Dock component: menu
     dockedMenu: {
         enabled: true

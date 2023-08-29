@@ -86,6 +86,14 @@ export interface NowPlayingScreenSettings {
   albumartBorder?: string;
   albumartBorderRadius?: string;
 
+  // VU Meter
+  vuMeter?: {
+    templateType: 'random' | 'fixed';
+    template?: string;
+    meterType?: 'random' | 'fixed';
+    meter?: string;
+  };
+
   // Dock component: menu
   dockedMenu?: {
     enabled?: boolean;
@@ -247,6 +255,14 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
   // ALbumart: border
   albumartBorder: '',
   albumartBorderRadius: '',
+
+  // VU Meter
+  vuMeter: {
+    templateType: 'random',
+    template: '',
+    meterType: 'random',
+    meter: ''
+  },
 
   // Dock component: menu
   dockedMenu: {
