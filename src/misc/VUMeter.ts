@@ -17,6 +17,7 @@ export interface VUMeterBase {
 
 export interface VUMeterLinear extends VUMeterBase {
   type: 'linear';
+  indicatorType?: 'single';
   channels: 2;
   left: {
     x: number;
