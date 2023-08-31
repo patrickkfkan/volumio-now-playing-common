@@ -1,3 +1,4 @@
+import { VUMeterContext } from '../misc/VUMeter.js';
 import { DockComponentPlacement, ImageFit, CommonSettingsOf, WeatherIconStyle } from './CommonSettings.js';
 
 export interface NowPlayingScreenSettings {
@@ -87,14 +88,7 @@ export interface NowPlayingScreenSettings {
   albumartBorderRadius?: string;
 
   // VU Meter
-  vuMeter?: {
-    templateType: 'random' | 'fixed';
-    template?: string;
-    meterType?: 'random' | 'fixed';
-    meter?: string;
-    randomRefreshInterval?: number;
-    randomRefreshOnTrackChange?: boolean;
-  };
+  vuMeter?: VUMeterContext;
 
   // Dock component: menu
   dockedMenu?: {
@@ -261,9 +255,6 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
   // VU Meter
   vuMeter: {
     templateType: 'random',
-    template: '',
-    meterType: 'random',
-    meter: '',
     randomRefreshInterval: 0,
     randomRefreshOnTrackChange: true
   },

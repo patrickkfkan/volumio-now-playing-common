@@ -75,9 +75,6 @@ exports.DefaultNowPlayingScreenSettings = {
     // VU Meter
     vuMeter: {
         templateType: 'random',
-        template: '',
-        meterType: 'random',
-        meter: '',
         randomRefreshInterval: 0,
         randomRefreshOnTrackChange: true
     },

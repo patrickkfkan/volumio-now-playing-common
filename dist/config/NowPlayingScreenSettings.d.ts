@@ -1,3 +1,4 @@
+import { VUMeterContext } from '../misc/VUMeter.js';
 import { DockComponentPlacement, ImageFit, CommonSettingsOf, WeatherIconStyle } from './CommonSettings.js';
 export interface NowPlayingScreenSettings {
     trackInfoVisibility?: 'default' | 'custom';
@@ -55,14 +56,7 @@ export interface NowPlayingScreenSettings {
     albumartFit?: ImageFit;
     albumartBorder?: string;
     albumartBorderRadius?: string;
-    vuMeter?: {
-        templateType: 'random' | 'fixed';
-        template?: string;
-        meterType?: 'random' | 'fixed';
-        meter?: string;
-        randomRefreshInterval?: number;
-        randomRefreshOnTrackChange?: boolean;
-    };
+    vuMeter?: VUMeterContext;
     dockedMenu?: {
         enabled?: boolean;
     };
