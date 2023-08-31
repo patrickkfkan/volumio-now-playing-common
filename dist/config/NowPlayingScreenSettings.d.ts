@@ -60,6 +60,8 @@ export interface NowPlayingScreenSettings {
         template?: string;
         meterType?: 'random' | 'fixed';
         meter?: string;
+        randomRefreshInterval?: number;
+        randomRefreshOnTrackChange?: boolean;
     };
     dockedMenu?: {
         enabled?: boolean;

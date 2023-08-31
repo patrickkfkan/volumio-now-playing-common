@@ -77,7 +77,9 @@ exports.DefaultNowPlayingScreenSettings = {
         templateType: 'random',
         template: '',
         meterType: 'random',
-        meter: ''
+        meter: '',
+        randomRefreshInterval: 0,
+        randomRefreshOnTrackChange: true
     },
     // Dock component: menu
     dockedMenu: {

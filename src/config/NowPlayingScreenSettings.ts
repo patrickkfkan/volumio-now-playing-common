@@ -92,6 +92,8 @@ export interface NowPlayingScreenSettings {
     template?: string;
     meterType?: 'random' | 'fixed';
     meter?: string;
+    randomRefreshInterval?: number;
+    randomRefreshOnTrackChange?: boolean;
   };
 
   // Dock component: menu
@@ -261,7 +263,9 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     templateType: 'random',
     template: '',
     meterType: 'random',
-    meter: ''
+    meter: '',
+    randomRefreshInterval: 0,
+    randomRefreshOnTrackChange: true
   },
 
   // Dock component: menu
