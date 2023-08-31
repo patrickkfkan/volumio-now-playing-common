@@ -157,20 +157,3 @@ export type VUMeterConfig = {
   error: string;
   meters?: undefined;
 }
-
-export type VUMeterContext = {
-  templateType: 'random';
-  randomRefreshInterval: number;
-  randomRefreshOnTrackChange: boolean;
-} | {
-  templateType: 'fixed';
-  template: string;
-  meterType?: 'random';
-  randomRefreshInterval: number;
-  randomRefreshOnTrackChange: boolean;
-} | {
-  templateType: 'fixed';
-  template: string;
-  meterType: 'fixed';
-  meter: string;
-};
