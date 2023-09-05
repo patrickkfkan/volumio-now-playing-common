@@ -99,6 +99,7 @@ export interface NowPlayingScreenSettings {
   // Dock component: menu
   dockedMenu?: {
     enabled?: boolean;
+    showInVUMeterView?: boolean;
   };
 
   // Dock component: action panel trigger
@@ -111,6 +112,7 @@ export interface NowPlayingScreenSettings {
     iconColor?: string;
     opacity?: string;
     margin?: string;
+    showInVUMeterView?: boolean;
   };
 
   // Dock component: volume indicator
@@ -129,6 +131,7 @@ export interface NowPlayingScreenSettings {
     displayOrder?: string;
     margin?: string;
     showVolumeBarOnClick?: boolean;
+    showInVUMeterView?: boolean;
   };
 
   // Dock component: clock
@@ -151,6 +154,7 @@ export interface NowPlayingScreenSettings {
     showSeconds?: boolean;
     displayOrder?: string;
     margin?: string;
+    showInVUMeterView?: boolean;
   };
 
   // Dock component: weather
@@ -169,6 +173,7 @@ export interface NowPlayingScreenSettings {
     showHumidity?: boolean;
     showWindSpeed?: boolean;
     margin?: string;
+    showInVUMeterView?: boolean;
   };
 }
 
@@ -270,7 +275,8 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
 
   // Dock component: menu
   dockedMenu: {
-    enabled: true
+    enabled: true,
+    showInVUMeterView: true
   },
 
   // Dock component: action panel trigger
@@ -281,7 +287,8 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     iconSize: '',
     iconColor: '#CCCCCC',
     opacity: '',
-    margin: ''
+    margin: '',
+    showInVUMeterView: false
   },
 
   dockedVolumeIndicator: {
@@ -298,7 +305,8 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     placement: 'bottom-right',
     displayOrder: '',
     margin: '',
-    showVolumeBarOnClick: false
+    showVolumeBarOnClick: false,
+    showInVUMeterView: false
   },
 
   // Dock component: clock
@@ -320,7 +328,8 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     hour24: false,
     showSeconds: false,
     displayOrder: '',
-    margin: ''
+    margin: '',
+    showInVUMeterView: false
   },
 
   // Dock component: weather
@@ -338,6 +347,7 @@ export const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenS
     displayOrder: '',
     showHumidity: false,
     showWindSpeed: false,
-    margin: ''
+    margin: '',
+    showInVUMeterView: false
   }
 };

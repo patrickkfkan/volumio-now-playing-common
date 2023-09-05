@@ -65,6 +65,7 @@ export interface NowPlayingScreenSettings {
     };
     dockedMenu?: {
         enabled?: boolean;
+        showInVUMeterView?: boolean;
     };
     dockedActionPanelTrigger?: {
         enabled?: boolean;
@@ -74,6 +75,7 @@ export interface NowPlayingScreenSettings {
         iconColor?: string;
         opacity?: string;
         margin?: string;
+        showInVUMeterView?: boolean;
     };
     dockedVolumeIndicator?: {
         enabled?: boolean;
@@ -90,6 +92,7 @@ export interface NowPlayingScreenSettings {
         displayOrder?: string;
         margin?: string;
         showVolumeBarOnClick?: boolean;
+        showInVUMeterView?: boolean;
     };
     dockedClock?: {
         enabled?: boolean;
@@ -110,6 +113,7 @@ export interface NowPlayingScreenSettings {
         showSeconds?: boolean;
         displayOrder?: string;
         margin?: string;
+        showInVUMeterView?: boolean;
     };
     dockedWeather?: {
         enabled?: boolean;
@@ -126,6 +130,7 @@ export interface NowPlayingScreenSettings {
         showHumidity?: boolean;
         showWindSpeed?: boolean;
         margin?: string;
+        showInVUMeterView?: boolean;
     };
 }
 export declare const DefaultNowPlayingScreenSettings: CommonSettingsOf<NowPlayingScreenSettings>;

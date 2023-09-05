@@ -83,7 +83,8 @@ exports.DefaultNowPlayingScreenSettings = {
     },
     // Dock component: menu
     dockedMenu: {
-        enabled: true
+        enabled: true,
+        showInVUMeterView: true
     },
     // Dock component: action panel trigger
     dockedActionPanelTrigger: {
@@ -93,7 +94,8 @@ exports.DefaultNowPlayingScreenSettings = {
         iconSize: '',
         iconColor: '#CCCCCC',
         opacity: '',
-        margin: ''
+        margin: '',
+        showInVUMeterView: false
     },
     dockedVolumeIndicator: {
         enabled: false,
@@ -109,7 +111,8 @@ exports.DefaultNowPlayingScreenSettings = {
         placement: 'bottom-right',
         displayOrder: '',
         margin: '',
-        showVolumeBarOnClick: false
+        showVolumeBarOnClick: false,
+        showInVUMeterView: false
     },
     // Dock component: clock
     dockedClock: {
@@ -130,7 +133,8 @@ exports.DefaultNowPlayingScreenSettings = {
         hour24: false,
         showSeconds: false,
         displayOrder: '',
-        margin: ''
+        margin: '',
+        showInVUMeterView: false
     },
     // Dock component: weather
     dockedWeather: {
@@ -147,7 +151,8 @@ exports.DefaultNowPlayingScreenSettings = {
         displayOrder: '',
         showHumidity: false,
         showWindSpeed: false,
-        margin: ''
+        margin: '',
+        showInVUMeterView: false
     }
 };
 //# sourceMappingURL=NowPlayingScreenSettings.js.map

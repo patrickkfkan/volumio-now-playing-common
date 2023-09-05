@@ -11,6 +11,11 @@ export interface PerformanceSettings {
   unmountBrowseScreenOnExit?: boolean;
   unmountQueueScreenOnExit?: boolean;
   unmountVolumioScreenOnExit?: boolean;
+
+  // VU Meter Rendering
+  vuMeterRenderingKiosk?: 'webgl' | 'css';
+  vuMeterRenderingOtherDevices?: 'webgl' | 'css';
+  vuMeterShowWebGLFPS?: boolean;
 }
 
 export const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings> = {
@@ -23,5 +28,10 @@ export const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings> =
   unmountNowPlayingScreenOnExit: true,
   unmountBrowseScreenOnExit: false,
   unmountQueueScreenOnExit: false,
-  unmountVolumioScreenOnExit: true
+  unmountVolumioScreenOnExit: true,
+
+  // VU Meter Rendering
+  vuMeterRenderingKiosk: 'css',
+  vuMeterRenderingOtherDevices: 'webgl',
+  vuMeterShowWebGLFPS: false
 };

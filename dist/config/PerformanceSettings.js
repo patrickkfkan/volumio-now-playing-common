@@ -10,6 +10,10 @@ exports.DefaultPerformanceSettings = {
     unmountNowPlayingScreenOnExit: true,
     unmountBrowseScreenOnExit: false,
     unmountQueueScreenOnExit: false,
-    unmountVolumioScreenOnExit: true
+    unmountVolumioScreenOnExit: true,
+    // VU Meter Rendering
+    vuMeterRenderingKiosk: 'css',
+    vuMeterRenderingOtherDevices: 'webgl',
+    vuMeterShowWebGLFPS: false
 };
 //# sourceMappingURL=PerformanceSettings.js.map
