@@ -1,7 +1,7 @@
 import { CommonSettingsOf } from './CommonSettings.js';
 
 export interface StartupOptions {
-  activeScreen?: 'nowPlaying.basicView' | 'nowPlaying.infoView' | 'browse' | 'volumio';
+  activeScreen?: 'nowPlaying.basicView' | 'nowPlaying.infoView' | 'nowPlaying.vuMeter' | 'browse' | 'volumio';
   activateIdleScreen?: boolean;
 }
 
