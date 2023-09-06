@@ -14,6 +14,6 @@ exports.DefaultPerformanceSettings = {
     // VU Meter Rendering
     vuMeterRenderingKiosk: 'css',
     vuMeterRenderingOtherDevices: 'webgl',
-    vuMeterShowWebGLFPS: false
+    vuMeterWebGLShowStats: false
 };
 //# sourceMappingURL=PerformanceSettings.js.map

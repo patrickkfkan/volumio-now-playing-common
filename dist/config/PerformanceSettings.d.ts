@@ -9,7 +9,7 @@ export interface PerformanceSettings {
     unmountVolumioScreenOnExit?: boolean;
     vuMeterRenderingKiosk?: 'webgl' | 'css';
     vuMeterRenderingOtherDevices?: 'webgl' | 'css';
-    vuMeterShowWebGLFPS?: boolean;
+    vuMeterWebGLShowStats?: boolean;
 }
 export declare const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings>;
 //# sourceMappingURL=PerformanceSettings.d.ts.map

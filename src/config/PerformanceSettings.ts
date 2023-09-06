@@ -15,7 +15,7 @@ export interface PerformanceSettings {
   // VU Meter Rendering
   vuMeterRenderingKiosk?: 'webgl' | 'css';
   vuMeterRenderingOtherDevices?: 'webgl' | 'css';
-  vuMeterShowWebGLFPS?: boolean;
+  vuMeterWebGLShowStats?: boolean;
 }
 
 export const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings> = {
@@ -33,5 +33,5 @@ export const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings> =
   // VU Meter Rendering
   vuMeterRenderingKiosk: 'css',
   vuMeterRenderingOtherDevices: 'webgl',
-  vuMeterShowWebGLFPS: false
+  vuMeterWebGLShowStats: false
 };
