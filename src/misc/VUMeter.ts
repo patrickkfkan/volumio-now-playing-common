@@ -1,4 +1,5 @@
 export interface VUMeterBase {
+  template: string;
   name: string;
   type: 'linear' | 'circular';
   meter: {
