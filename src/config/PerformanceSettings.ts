@@ -13,8 +13,8 @@ export interface PerformanceSettings {
   unmountVolumioScreenOnExit?: boolean;
 
   // VU Meter Rendering
-  vuMeterRenderingKiosk?: 'webgl' | 'css';
-  vuMeterRenderingOtherDevices?: 'webgl' | 'css';
+  vuMeterRenderingKiosk?: 'webgl' | 'canvas' | 'css';
+  vuMeterRenderingOtherDevices?: 'webgl' | 'canvas' | 'css';
   vuMeterWebGLShowStats?: boolean;
 }
 

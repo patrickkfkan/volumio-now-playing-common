@@ -7,8 +7,8 @@ export interface PerformanceSettings {
     unmountBrowseScreenOnExit?: boolean;
     unmountQueueScreenOnExit?: boolean;
     unmountVolumioScreenOnExit?: boolean;
-    vuMeterRenderingKiosk?: 'webgl' | 'css';
-    vuMeterRenderingOtherDevices?: 'webgl' | 'css';
+    vuMeterRenderingKiosk?: 'webgl' | 'canvas' | 'css';
+    vuMeterRenderingOtherDevices?: 'webgl' | 'canvas' | 'css';
     vuMeterWebGLShowStats?: boolean;
 }
 export declare const DefaultPerformanceSettings: CommonSettingsOf<PerformanceSettings>;
