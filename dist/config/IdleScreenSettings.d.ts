@@ -2,6 +2,7 @@ import { BackgroundOverlay, BackgroundPosition, ImageFit, CommonSettingsOf, Weat
 export interface IdleScreenSettings {
     enabled?: 'all' | 'disabled' | 'kiosk';
     waitTime?: number;
+    showClock?: boolean;
     showLocation?: boolean;
     showWeather?: boolean;
     mainAlignment?: 'flex-start' | 'center' | 'flex-end' | 'cycle';

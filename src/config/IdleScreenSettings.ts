@@ -3,6 +3,7 @@ import { BackgroundOverlay, BackgroundPosition, ImageFit, CommonSettingsOf, Weat
 export interface IdleScreenSettings {
   enabled?: 'all' | 'disabled' | 'kiosk';
   waitTime?: number;
+  showClock?: boolean;
   showLocation?: boolean;
   showWeather?: boolean;
   mainAlignment?: 'flex-start' | 'center' | 'flex-end' | 'cycle';
@@ -89,6 +90,7 @@ export interface IdleScreenSettings {
 export const DefaultIdleScreenSettings: CommonSettingsOf<IdleScreenSettings> = {
   enabled: 'kiosk',
   waitTime: 30,
+  showClock: true,
   showLocation: true,
   showWeather: true,
   mainAlignment: 'flex-start',

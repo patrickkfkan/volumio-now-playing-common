@@ -4,6 +4,7 @@ exports.DefaultIdleScreenSettings = void 0;
 exports.DefaultIdleScreenSettings = {
     enabled: 'kiosk',
     waitTime: 30,
+    showClock: true,
     showLocation: true,
     showWeather: true,
     mainAlignment: 'flex-start',
