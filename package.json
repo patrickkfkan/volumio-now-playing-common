@@ -1,6 +1,6 @@
 {
   "name": "now-playing-common",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "private": true,
   "type": "commonjs",
   "description": "Common resources shared between Volumio Now Playing plugin and client.",

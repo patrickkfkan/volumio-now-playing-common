@@ -2,6 +2,9 @@ Common resources shared between [Volumio Now Playing plugin](https://github.com/
 
 ## Changelog
 
+0.3.4
+- Add `showClock` to idle screen settings ([@phts](https://github.com/phts) - [#3](https://github.com/patrickkfkan/volumio-now-playing-common/pull/3))
+
 0.3.3
 - `NowPlayingMetadataProvider` v1.1.0: add `duration` arg to `getSongInfo()`
 
